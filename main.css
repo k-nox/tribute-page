@@ -3,18 +3,30 @@ html {
 }
 body {
     font-size: 0.875rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.responsive-img{
-    max-width: 100%;
-    height: auto;
-}
-.container {
+    font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template:
                     "header"
                     "article"
                     "footer";
+    line-height: 1.2;
+    color: #202020;
+}
+a {
+    text-decoration: none;
+    color: #151461;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: #3c1461;
+}
+.responsive-img{
+    display: block;
+    max-width: 95%;
+    height: auto;
+    margin: 2% auto;
 }
 .header {
     grid-area: header;
@@ -31,6 +43,7 @@ body {
 }
 .fig {
     grid-area: figure;
+    align-self: center;
 }
 .timeline {
     grid-area: timeline;
@@ -38,5 +51,48 @@ body {
 .credits {
     grid-area: credits;
 }
-
-
+.f-lg {
+    font-size: 2.5rem;
+}
+.f-md {
+    font-size: 1.5rem;
+}
+.f-sm {
+    font-size: 0.625rem;
+}
+.txt-ctr {
+    text-align: center;
+}
+.bg-lt-gradient {
+    background-image: linear-gradient(#ecfcf4, #dcffee)
+}
+.bg-dk {
+    background-color: #c8c7ff;
+}
+.bg-gradient {
+    background-image: linear-gradient(#dcffee, #c8c7ff);
+}
+.mar-0 {
+    margin: 0;
+}
+.pa-5 {
+    padding: 5%;
+}
+.bold {
+    font-weight: bold;
+}
+.list {
+    list-style: url('images/candy-list.png');
+}
+.b-mar-1 {
+    margin-bottom: 1%;
+} 
+.mar-1 {
+    margin: 1%;
+}
+.round-corner {
+    border-radius: 0.5rem;
+}
+.h-font {
+    font-family: 'Raleway', sans-serif;
+}
