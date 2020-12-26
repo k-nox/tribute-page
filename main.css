@@ -38,6 +38,14 @@ a:visited {
                     "figure timeline"
                     "credits credits"
 }
+@media (max-width: 700px) {
+    .content {
+        grid-template:
+                        "figure"
+                        "timeline"
+                        "credits";
+    }
+}
 .footer {
     grid-area: footer;
 }
