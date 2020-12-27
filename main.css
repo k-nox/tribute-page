@@ -110,7 +110,7 @@ a:hover {
         font-size: 1.25rem;
     }
     .f-sm {
-        0.5rem;
+        font-size: 0.5rem;
     }
     a:focus, a:active {
         text-decoration: underline;
