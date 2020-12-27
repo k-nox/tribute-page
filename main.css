@@ -14,13 +14,10 @@ body {
 }
 a {
     text-decoration: none;
-    color: #151461;
+    color: #2523a7;
 }
 a:hover {
     text-decoration: underline;
-}
-a:visited {
-    color: #3c1461;
 }
 .responsive-img{
     display: block;
@@ -35,16 +32,8 @@ a:visited {
     grid-area: article;
     display: grid;
     grid-template:
-                    "figure timeline"
-                    "credits credits"
-}
-@media (max-width: 700px) {
-    .content {
-        grid-template:
-                        "figure"
-                        "timeline"
-                        "credits";
-    }
+                        "figure timeline"
+                        "credits credits";
 }
 .footer {
     grid-area: footer;
@@ -103,4 +92,27 @@ a:visited {
 }
 .h-font {
     font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 0.75rem;
+    }
+    .content {
+        grid-template:
+                        "figure"
+                        "timeline"
+                        "credits";
+    }
+    .f-lg {
+        font-size: 2rem;
+    }
+    .f-md {
+        font-size: 1.25rem;
+    }
+    .f-sm {
+        0.5rem;
+    }
+    a:focus, a:active {
+        text-decoration: underline;
+    }
 }
